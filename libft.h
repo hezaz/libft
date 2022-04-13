@@ -6,13 +6,27 @@
 /*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 16:37:59 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/14 00:13:23 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/04/14 01:29:47 by hedizaz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIB_H
 	#define LIB_H
 
+#include <unistd.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <math.h>
+#include <ctype.h>
+#include <limits.h>
+#include <float.h>
+#include <locale.h>
+#include <errno.h>
+#include <stddef.h>
+#include <time.h>
+#include <assert.h>
 
 typedef struct	s_list
 {
