@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 22:35:39 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/11 22:45:56 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/04/25 21:17:23 by hedi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_isascii(int c)
 {
-	char	set;
-
-	set = (char)c;
-	if (set >= 0 && set <= 127)
-        return (1);
+	if (c >= 0 && c <= 127)
+		return (1);
 	return (0);
 }

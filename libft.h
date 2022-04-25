@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 16:37:59 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/14 01:29:47 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/04/25 21:20:12 by hedi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdint.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <math.h>

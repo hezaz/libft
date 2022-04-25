@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 19:19:07 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/14 00:12:59 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/04/25 21:21:46 by hedi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,12 +88,10 @@ char	**ft_ultimate_malloc(size_t nbr_mot, size_t *len_str)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t			i;
 	size_t			*len_str;
 	size_t			nbr_mot;
 	char			**split;
 
-	i = -1;
 	split = NULL;
 	nbr_mot = nbr_word(s, c);
 	len_str = ft_set_ultimate_len((char *)s, c , nbr_mot);
