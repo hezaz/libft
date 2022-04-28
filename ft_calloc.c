@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 03:47:17 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/14 00:07:50 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/04/28 14:23:40 by hedi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*calloc;
-	int		*tmp;
+	void			*calloc;
+	unsigned char	*tmp;
 	size_t	i;
 
 	i = 0;
+	calloc = NULL;
+	tmp = NULL;
 	if (size == 0 || count == 0  || (size * count) > SIZE_MAX)
 		return ((void *) NULL);
 	if ((size == SIZE_MAX && count > 1) || (count == SIZE_MAX && size > 1))
@@ -26,11 +28,29 @@ void	*ft_calloc(size_t count, size_t size)
 	calloc = malloc(size * count);
 	if (!calloc)
 		return ((void *) NULL);
-	tmp = (int *)calloc;
+	tmp = (unsigned char *)calloc;
 	while (i < count)
 		tmp[i++] = 0;
+	tmp = NULL;
 	return (calloc);
 }
+/*
+int main (void)
+{
+	char e[] = {0, 0, 0, 0};
+	void * p = ft_calloc(2, 2);
+	if(memcmp(p, e, 2))
+		printf("error");
+		//return(1);
+
+	free(p);
+	//p = e;
+	p = NULL;
+	
+	return (0);
+}
+*/
+
 
 char	**ft_ultimate_malerror(char **s, char *s2)
 {

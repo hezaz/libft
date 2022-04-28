@@ -6,16 +6,16 @@
 /*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 16:37:59 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/25 21:20:12 by hedi             ###   ########.fr       */
+/*   Updated: 2022/04/27 22:52:24 by hedi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIB_H
 	#define LIB_H
 
+#include <stdio.h>
 #include <unistd.h>
 #include <string.h>
-#include <stdio.h>
 #include <stdint.h>
 #include <stdarg.h>
 #include <stdlib.h>
@@ -35,21 +35,6 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
-
-#include <unistd.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdarg.h>
-#include <stdlib.h>
-#include <math.h>
-#include <ctype.h>
-#include <limits.h>
-#include <float.h>
-#include <locale.h>
-#include <errno.h>
-#include <stddef.h>
-#include <time.h>
-#include <assert.h>
 
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
