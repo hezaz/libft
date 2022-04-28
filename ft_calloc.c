@@ -6,7 +6,7 @@
 /*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 03:47:17 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/28 14:23:40 by hedi             ###   ########.fr       */
+/*   Updated: 2022/04/28 19:20:54 by hedi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ void	*ft_calloc(size_t count, size_t size)
 	i = 0;
 	calloc = NULL;
 	tmp = NULL;
-	if (size == 0 || count == 0  || (size * count) > SIZE_MAX)
+
+	if(size ==0 || count == 0 || (size * count) > SIZE_MAX)
 		return ((void *) NULL);
 	if ((size == SIZE_MAX && count > 1) || (count == SIZE_MAX && size > 1))
 		return ((void *) NULL);
@@ -29,7 +30,7 @@ void	*ft_calloc(size_t count, size_t size)
 	if (!calloc)
 		return ((void *) NULL);
 	tmp = (unsigned char *)calloc;
-	while (i < count)
+	while (i < (count * size))
 		tmp[i++] = 0;
 	tmp = NULL;
 	return (calloc);
