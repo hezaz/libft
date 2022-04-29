@@ -6,7 +6,7 @@
 /*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 19:19:07 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/25 21:21:46 by hedi             ###   ########.fr       */
+/*   Updated: 2022/04/29 01:11:34 by hedi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	**ft_ultimate_malloc(size_t nbr_mot, size_t *len_str)
 	while (++i < nbr_mot)
 	{
 		if (nbr_mot == 1)
-			split[0] = malloc(sizeof(char) * (1));
+			split[0] = malloc(sizeof(char) * (len_str[i] + 1));
 		else
 			split[i] = malloc(sizeof(char) * (len_str[i] + 1));
 		if (!split[i])

@@ -1,6 +1,6 @@
 NAME = libft.a
 
-CC = gcc
+CC = clang
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -40,7 +40,7 @@ SRC = ft_memset.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 
-BONUS_SRC = ft_lstnew.c \
+BONUS_SRC = ft_lstnew_bonus.c \
 	ft_lstadd_front.c \
 	ft_lstsize.c \
 	ft_lstlast.c \
@@ -61,9 +61,7 @@ $(NAME): $(OBJ)
 	ranlib $(NAME)
 
 %.o: %.c
-	@echo "\033[0;33mGenerating obj..."
 	$(CC) -c $(CFLAGS) $^
-	@echo "\033[0m"
 
 bonus : $(OBJ) $(BONUS_OBJ)
 	ar rc $(NAME) $^

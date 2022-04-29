@@ -6,7 +6,7 @@
 /*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 03:47:17 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/28 19:20:54 by hedi             ###   ########.fr       */
+/*   Updated: 2022/04/29 01:06:44 by hedi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ void	ft_int_free(int **s)
 
 char	**ft_ulti_malerror(char **s)
 {
+	s = malloc(sizeof(char *));
 	*s = NULL;
 	return (s);
 }
