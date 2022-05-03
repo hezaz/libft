@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 17:26:25 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/12 21:55:36 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/03 18:31:57 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t 			i;
+	size_t			i;
 	unsigned char	x;
 	unsigned char	*a;
 

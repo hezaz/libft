@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 19:19:07 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/29 01:11:34 by hedi             ###   ########.fr       */
+/*   Updated: 2022/05/03 18:33:09 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ char	**ft_split(char const *s, char c)
 
 	split = NULL;
 	nbr_mot = nbr_word(s, c);
-	len_str = ft_set_ultimate_len((char *)s, c , nbr_mot);
+	len_str = ft_set_ultimate_len((char *)s, c, nbr_mot);
 	split = ft_ultimate_malloc(nbr_mot, len_str);
 	if (!split)
 		return (NULL);

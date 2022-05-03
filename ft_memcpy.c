@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 16:26:19 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/13 11:43:29 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/03 18:31:23 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char		*x;
 	const unsigned char	*y;
 
-	if (!dst || !src) 
+	if (!dst || !src)
 		return (NULL);
 	i = -1;
 	x = (unsigned char *)dst;
@@ -26,7 +26,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	while (++i < n)
 		x[i] = y[i];
 	return (dst);
-}/*
+}
+/*
 
 int	main(int ac, char **av)
 {

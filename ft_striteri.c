@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 12:16:17 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/12 12:36:10 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/04 00:55:40 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

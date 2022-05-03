@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 03:47:17 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/29 01:06:44 by hedi             ###   ########.fr       */
+/*   Updated: 2022/05/03 17:55:40 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,12 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void			*calloc;
 	unsigned char	*tmp;
-	size_t	i;
+	size_t			i;
 
 	i = 0;
 	calloc = NULL;
 	tmp = NULL;
-
-	if(size ==0 || count == 0 || (size * count) > SIZE_MAX)
+	if (size == 0 || count == 0 || (size * count) > SIZE_MAX)
 		return ((void *) NULL);
 	if ((size == SIZE_MAX && count > 1) || (count == SIZE_MAX && size > 1))
 		return ((void *) NULL);
@@ -51,7 +50,6 @@ int main (void)
 	return (0);
 }
 */
-
 
 char	**ft_ultimate_malerror(char **s, char *s2)
 {

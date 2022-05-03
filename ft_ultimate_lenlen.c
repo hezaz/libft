@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_lenlen.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 13:35:48 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/12 13:36:26 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/04 01:00:20 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
 size_t	ft_ultimate_lenlen(char **s)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 05:28:00 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/14 00:54:13 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/04 01:01:19 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,8 @@ char	*ft_itoa(int n)
 		s[0] = '0';
 	if (nbr < 0)
 	{
-		s[0] = '-';
+		s[i++] = '-';
 		nbr *= -1;
-		i++;
 	}
 	while (nbr > 0 && len_nb >= i)
 	{

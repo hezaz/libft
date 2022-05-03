@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 02:31:36 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/12 04:08:39 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/04 00:59:00 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ int	is_charset(char *s, char *charset)
 	return (1);
 }
 
-char *ft_strstr(const char *haystack, const char *needle)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
 	int	i;
-	
+
 	i = -1;
 	if (!needle || needle[0] == '\0')
 		return (haystack);

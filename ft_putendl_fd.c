@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 11:40:49 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/12 11:43:14 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/03 18:32:09 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

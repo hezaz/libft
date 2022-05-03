@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 22:36:39 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/29 00:20:24 by hedi             ###   ########.fr       */
+/*   Updated: 2022/05/04 00:59:59 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strnlen(const char *s, size_t n)
 	return (i);
 }
 
-size_t	ft_str_start_nlen(const char *s, size_t start ,size_t n)
+size_t	ft_str_start_nlen(const char *s, size_t start, size_t n)
 {
 	size_t	i;
 	size_t	j;
@@ -31,7 +31,7 @@ size_t	ft_str_start_nlen(const char *s, size_t start ,size_t n)
 	j = 0;
 	while (s && s[i] && i < start)
 		i++;
-	while (s && s[i] && j < n )
+	while (s && s[i] && j < n)
 	{
 		i++;
 		j++;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 22:36:32 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/27 22:14:21 by hedi             ###   ########.fr       */
+/*   Updated: 2022/05/03 02:56:12 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	while (haystack && needle && haystack[i] && i < len)
 	{
 		ret = (char *)haystack;
-		if (is_n_charset((haystack + i), needle, (len -i)))
+		if (is_n_charset((haystack + i), needle, (len - i)))
 			return (ret + i);
 		i++;
 	}
@@ -50,22 +50,22 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (ret);
 }
 /*
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	
-
 	
 	if (ac < 3)
 	{
 		printf("pas assez d'arg");
-		return 0;
+		return (0);
 	}
 	if (ft_strnstr(av[1], av[2], 8) == NULL && strnstr(av[1], av[2], 8) == NULL)
 	{
 		printf("ok");
-		return 0;
+		return (0);
 	}
-	else if (strnstr(av[1], av[2], 8) == NULL || ft_strnstr(av[1], av[2], 8) == NULL )
+	else if (strnstr(av[1], av[2], 8) == NULL || ft_strnstr(av[1], av[2],
+				8) == NULL )
 	{
 		printf("faux");
 		if (strnstr(av[1], av[2], 8) == NULL)
@@ -80,7 +80,7 @@ int main(int ac, char **av)
 			printf("\n version_ft  : %s\n",ft_strnstr(av[1], av[2], 8));
 			printf("\n version_lib : %s\n",strnstr(av[1], av[2], 8));
 		}
-		return 0;
+		return (0);
 	}
 	if (strcmp(ft_strnstr(av[1], av[2], 8), strnstr(av[1], av[2], 8)))
 	{

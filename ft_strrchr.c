@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 22:36:35 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/13 12:40:20 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/04 00:58:52 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (s && s[++i])
 		if (s[i] == (const char)c)
 			tmp = (char *)(&s[i]);
-	if (s[i] ==(const char)c)
+	if (s[i] == (const char)c)
 		tmp = (char *)(&s[i]);
 	return (tmp);
 }

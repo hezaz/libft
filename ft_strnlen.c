@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnlen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 04:55:21 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/12 04:59:02 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/04 00:58:30 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strnlen(const char *s, size_t n)
 {

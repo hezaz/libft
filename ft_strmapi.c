@@ -3,21 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedi <hedi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 12:02:03 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/29 17:33:25 by hedi             ###   ########.fr       */
+/*   Updated: 2022/05/04 00:57:41 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- #include "libft.h"
+#include "libft.h"
 
- char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
- {
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
 	char	*str;
 	int		i;
+
 	str = strdup(s);
-	if (!str) 
+	if (!str)
 		return (NULL);
 	i = -1;
 	while (str && str[++i])

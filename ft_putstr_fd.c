@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 11:39:41 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/12 11:40:23 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/05/03 18:32:19 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
