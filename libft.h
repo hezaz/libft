@@ -6,40 +6,40 @@
 /*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 16:37:59 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/04 03:05:37 by administrat      ###   ########.fr       */
+/*   Updated: 2022/05/05 01:42:46 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	LIBFT_H
-# define	LIBFT_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
-#include <stdio.h>
-#include <unistd.h>
-#include <string.h>
-#include <stdint.h>
-#include <stdarg.h>
-#include <stdlib.h>
-#include <math.h>
-#include <ctype.h>
-#include <limits.h>
-#include <float.h>
-#include <locale.h>
-#include <errno.h>
-#include <stddef.h>
-#include <time.h>
-#include <assert.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <string.h>
+# include <stdint.h>
+# include <stdarg.h>
+# include <stdlib.h>
+# include <math.h>
+# include <ctype.h>
+# include <limits.h>
+# include <float.h>
+# include <locale.h>
+# include <errno.h>
+# include <stddef.h>
+# include <time.h>
+# include <assert.h>
 
-typedef struct	s_list
+typedef struct s_list
 {
-	void	*content;
+	void			*content;
 	struct s_list	*next;
 }	t_list;
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
 size_t	ft_strlen(const char *str);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -78,7 +78,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
-t_list 	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		is_charset(char *s, char *charset);
 int		is_n_charset(const char *s, const char *charset, size_t len);
 int		is_in_charset(char *s, char *charset);
@@ -90,7 +90,7 @@ void	ft_putstr(char *s);
 void	ft_putnbr(int n);
 size_t	ft_ultimate_lenlen(char **s);
 size_t	ft_strnlen(const char *s, size_t n);
-size_t	ft_str_start_nlen(const char *s, size_t start ,size_t n);
+size_t	ft_str_start_nlen(const char *s, size_t start, size_t n);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	**ft_ultimate_malerror(char **s, char *s2);
 void	ft_free(char **s);
@@ -102,6 +102,5 @@ char	*gnl_dup(char *s1, size_t n);
 char	*gnl_join(char *tmp, char *buf);
 char	*find_line(char **tmp, char **buf);
 char	*get_next_line(int fd);
-
 
 #	endif

@@ -6,7 +6,7 @@
 /*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 05:09:17 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/04 00:59:40 by administrat      ###   ########.fr       */
+/*   Updated: 2022/05/05 01:49:04 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,20 +49,20 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		i;
 
 	i = 0;
-	len_src = ft_strlen_woset(s1, set);
+	len_src = ft_strlen(s1);
 	len_dest = 0;
+	len_src--;
 	if (!set || !*set)
 		return (ft_strdup(s1));
 	dest = malloc(len_src + 1 * sizeof(char));
 	if (!dest)
 		return (NULL);
-	while (s1 && s1[i])
-	{
-		if (in_charset(s1[i], set))
-			i++;
-		else
-			dest[len_dest++] = s1[i++];
-	}
+	while (s1 && s1[i] && in_charset(s1[i], set))
+		i++;
+	while (s1 && s1[len_src] && in_charset(s1[i], set))
+		len_src--;
+	while (s1[i] && i < len_src)
+		dest[len_dest++] = s1[i++];
 	dest[len_dest] = '\0';
 	return (dest);
 }
