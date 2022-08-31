@@ -6,13 +6,13 @@
 /*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 02:31:36 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/04 00:59:00 by administrat      ###   ########.fr       */
+/*   Updated: 2022/08/24 22:35:44 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_charset(char *s, char *charset)
+int	is_charset(const char *s, const char *charset)
 {
 	int	i;
 
@@ -32,11 +32,11 @@ char	*ft_strstr(const char *haystack, const char *needle)
 
 	i = -1;
 	if (!needle || needle[0] == '\0')
-		return (haystack);
+		return ((char *)haystack);
 	while (haystack && needle && haystack[++i])
 	{
 		if (is_charset(haystack, needle))
-			return (haystack + i);
+			return ((char *)haystack + i);
 	}
 	return (NULL);
 }

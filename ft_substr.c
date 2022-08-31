@@ -3,24 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
+/*   By: hzaz <hzaz@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 22:36:39 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/04 00:59:59 by administrat      ###   ########.fr       */
+/*   Updated: 2022/08/26 02:10:28 by hzaz             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strnlen(const char *s, size_t n)
-{
-	size_t	i;
-
-	i = 0;
-	while (s && s[i] && i < n)
-		i++;
-	return (i);
-}
 
 size_t	ft_str_start_nlen(const char *s, size_t start, size_t n)
 {

@@ -6,17 +6,20 @@
 /*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 11:50:31 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/03 18:32:16 by administrat      ###   ########.fr       */
+/*   Updated: 2022/08/25 01:08:14 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+size_t	ft_putnbr(long long n)
 {
 	char	*s;
+	size_t	len;
 
-	s = itoa(n);
-	write(1, s, ft_strlen(s));
+	s = ft_itoa(n);
+	len = ft_strlen(s);
+	write(1, s, len);
 	free(s);
+	return (len);
 }

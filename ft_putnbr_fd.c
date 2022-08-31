@@ -3,30 +3,50 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hedizaz <hedizaz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hzaz <hzaz@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 11:43:56 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/04/14 00:58:12 by hedizaz          ###   ########.fr       */
+/*   Updated: 2022/08/26 03:42:02 by hzaz             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+size_t	ft_putnbr_fd(long long n, int fd)
 {
-	long	nb;
+	unsigned long long	nb;
+	size_t				a;
+	size_t				*i;
 
-	nb = n;
-	if (nb < 0)
+	a = 0;
+	i = &a;
+	if (n < 0)
 	{
-		ft_putchar_fd('-', fd);
-		nb = (nb * -1);
+		*i += ft_putchar_fd('-', fd);
+		n = (n * -1);
 	}
+	nb = (unsigned long long)n;
 	if (nb < 10)
-		ft_putchar_fd(nb + 48, fd);
+		*i += ft_putchar_fd(nb + 48, fd);
 	if (nb > 9)
 	{
-		ft_putnbr_fd(nb / 10, fd);
-		ft_putnbr_fd(nb % 10, fd);
+		*i += ft_putnbr_fd(nb / 10, fd);
+		*i += ft_putnbr_fd(nb % 10, fd);
 	}
+	return (*i);
+}
+
+size_t	ft_unsigned_putnbr(unsigned long long nb)
+{
+	size_t	i;
+
+	i = 0;
+	if (nb < 10)
+		i += ft_putchar(nb + 48);
+	if (nb > 9)
+	{
+		i += ft_putnbr(nb / 10);
+		i += ft_putnbr(nb % 10);
+	}
+	return (i);
 }

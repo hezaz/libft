@@ -6,13 +6,17 @@
 /*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 11:39:41 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/03 18:32:19 by administrat      ###   ########.fr       */
+/*   Updated: 2022/08/25 04:54:18 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+size_t	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	size_t	len;
+
+	len = ft_strlen(s);
+	write(fd, s, len);
+	return (len);
 }

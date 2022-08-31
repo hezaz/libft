@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
+/*   By: hzaz <hzaz@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 05:09:17 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/05 01:49:04 by administrat      ###   ########.fr       */
+/*   Updated: 2022/08/26 03:39:55 by hzaz             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 	while (s1 && s1[len_src] && in_charset(s1[i], set))
 		len_src--;
-	while (s1[i] && i < len_src)
+	while (s1[i] && i < (int)len_src)
 		dest[len_dest++] = s1[i++];
 	dest[len_dest] = '\0';
 	return (dest);

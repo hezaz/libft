@@ -2,9 +2,10 @@ NAME = libft.a
 
 CC = clang
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -D BUFFER_SIZE=420
 
-SRC = ft_memset.c \
+SRC = ft_printf.c \
+	ft_memset.c \
 	ft_bzero.c \
 	ft_memcpy.c \
 	ft_memccpy.c \
@@ -39,6 +40,9 @@ SRC = ft_memset.c \
 	ft_putstr_fd.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
+	ft_printf_utils.c \
+	get_next_line_utils.c \
+	get_next_line.c \
 
 BONUS_SRC = ft_lstnew.c \
 	ft_lstadd_front.c \
@@ -76,3 +80,10 @@ fclean: clean
 re: fclean all
 
 .PHONY: all bonus clean fclean re
+
+
+# <cible> : <dependance>
+#	<commande>
+
+
+## Variable special : $@ = nom de la cible, $< nom de la 1ere dependmce, $^liste des dependance, ? liste de dependance plus recente que la cible, &* nom du fichier sans son extension

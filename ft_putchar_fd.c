@@ -6,13 +6,14 @@
 /*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 06:04:07 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/03 18:32:03 by administrat      ###   ########.fr       */
+/*   Updated: 2022/08/25 04:24:16 by administrat      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+size_t	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
+	return (1);
 }

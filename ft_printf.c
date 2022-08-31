@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_lenlen.c                               :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
+/*   By: hzaz <hzaz@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/12 13:35:48 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/04 01:00:20 by administrat      ###   ########.fr       */
+/*   Created: 2022/08/26 01:52:03 by hzaz              #+#    #+#             */
+/*   Updated: 2022/08/31 15:43:13 by hzaz             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_ultimate_lenlen(char **s)
+int	ft_printf(const char *str, ...)
 {
-	size_t	len;
-	int		i;
-	int		j;
+	va_list	ap;
+	int		cpt;
 
-	len = 0;
-	i = 0;
-	j = 0;
-	while (s && s[i] && s[i][j])
+	cpt = 0;
+	va_start(ap, str);
+	while (*str != 0)
 	{
-		while (s && s[i][j++])
-			len++;
-		i++;
-		j = 0;
+		if (*str == '%')
+			ft_printf_percent(*(++str), &ap, &cpt);
+		else
+			cpt += ft_putchar(*str);
+		str++;
 	}
+	va_end(ap);
+	return (cpt);
 }
