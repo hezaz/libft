@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: administrateur <administrateur@student.    +#+  +:+       +#+        */
+/*   By: hzaz <hzaz@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 17:31:06 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/05/03 18:30:11 by administrat      ###   ########.fr       */
+/*   Updated: 2022/09/01 01:58:02 by hzaz             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,15 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		i++;
 	}
 	return (NULL);
+}
+
+int	ft_same_str(char *str1, char *str2, size_t n)
+{
+	int				i;
+
+	i = -1;
+	while ((++i < (int)n) && str1 && str2)
+		if (str1[i] != str2[i])
+			return (0);
+	return (1);
 }

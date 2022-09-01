@@ -6,7 +6,7 @@
 /*   By: hzaz <hzaz@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 16:37:59 by hedizaz           #+#    #+#             */
-/*   Updated: 2022/08/31 16:26:22 by hzaz             ###   ########.fr       */
+/*   Updated: 2022/09/01 01:57:42 by hzaz             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,4 +114,7 @@ void		ft_print_ptr(unsigned long long p, size_t *i);
 size_t		ft_put_ptr(void *p);
 void		ft_printf_percent(char str, va_list *ap, int *cpt);
 int			ft_printf(const char *str, ...);
+char		*ft_strjoin_free1(char const *s1, char const *s2);
+char		*ft_strjoin_free2(char const *s1, char const *s2);
+int			ft_same_str(char *str1, char *str2, size_t n);
 #	endif
